@@ -1,0 +1,16 @@
+/home/yot/chip-8-emulator/build/CMakeFiles/chip8-emu.dir
+/home/yot/chip-8-emulator/build/CMakeFiles/edit_cache.dir
+/home/yot/chip-8-emulator/build/CMakeFiles/rebuild_cache.dir
+/home/yot/chip-8-emulator/build/CMakeFiles/list_install_components.dir
+/home/yot/chip-8-emulator/build/CMakeFiles/install.dir
+/home/yot/chip-8-emulator/build/CMakeFiles/install/local.dir
+/home/yot/chip-8-emulator/build/CMakeFiles/install/strip.dir
+/home/yot/chip-8-emulator/build/vendor/SDL/CMakeFiles/SDL3-shared.dir
+/home/yot/chip-8-emulator/build/vendor/SDL/CMakeFiles/SDL3_test.dir
+/home/yot/chip-8-emulator/build/vendor/SDL/CMakeFiles/SDL_uclibc.dir
+/home/yot/chip-8-emulator/build/vendor/SDL/CMakeFiles/edit_cache.dir
+/home/yot/chip-8-emulator/build/vendor/SDL/CMakeFiles/rebuild_cache.dir
+/home/yot/chip-8-emulator/build/vendor/SDL/CMakeFiles/list_install_components.dir
+/home/yot/chip-8-emulator/build/vendor/SDL/CMakeFiles/install.dir
+/home/yot/chip-8-emulator/build/vendor/SDL/CMakeFiles/install/local.dir
+/home/yot/chip-8-emulator/build/vendor/SDL/CMakeFiles/install/strip.dir

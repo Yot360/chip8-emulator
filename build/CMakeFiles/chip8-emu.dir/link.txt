@@ -1,0 +1,1 @@
+/usr/bin/c++ "CMakeFiles/chip8-emu.dir/src/Chip8.cpp.o" "CMakeFiles/chip8-emu.dir/src/Display.cpp.o" "CMakeFiles/chip8-emu.dir/src/main.cpp.o" -o chip8-emu  -Wl,-rpath,/home/yot/chip-8-emulator/build: libSDL3.so.0.3.0 
