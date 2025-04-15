@@ -11,7 +11,9 @@ CMakeFiles/chip8-emu.dir/src/Chip8.cpp.o: /home/yot/chip-8-emulator/src/Chip8.cp
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
   /usr/include/c++/13/bits/algorithmfwd.h \
+  /usr/include/c++/13/bits/align.h \
   /usr/include/c++/13/bits/alloc_traits.h \
+  /usr/include/c++/13/bits/allocated_ptr.h \
   /usr/include/c++/13/bits/allocator.h \
   /usr/include/c++/13/bits/basic_ios.h \
   /usr/include/c++/13/bits/basic_ios.tcc \
@@ -19,6 +21,8 @@ CMakeFiles/chip8-emu.dir/src/Chip8.cpp.o: /home/yot/chip-8-emulator/src/Chip8.cp
   /usr/include/c++/13/bits/basic_string.tcc \
   /usr/include/c++/13/bits/char_traits.h \
   /usr/include/c++/13/bits/charconv.h \
+  /usr/include/c++/13/bits/chrono.h \
+  /usr/include/c++/13/bits/codecvt.h \
   /usr/include/c++/13/bits/concept_check.h \
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
@@ -28,6 +32,11 @@ CMakeFiles/chip8-emu.dir/src/Chip8.cpp.o: /home/yot/chip-8-emulator/src/Chip8.cp
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
   /usr/include/c++/13/bits/exception_ptr.h \
+  /usr/include/c++/13/bits/fs_dir.h \
+  /usr/include/c++/13/bits/fs_fwd.h \
+  /usr/include/c++/13/bits/fs_ops.h \
+  /usr/include/c++/13/bits/fs_path.h \
+  /usr/include/c++/13/bits/fstream.tcc \
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
   /usr/include/c++/13/bits/hash_bytes.h \
@@ -37,8 +46,11 @@ CMakeFiles/chip8-emu.dir/src/Chip8.cpp.o: /home/yot/chip-8-emulator/src/Chip8.cp
   /usr/include/c++/13/bits/iterator_concepts.h \
   /usr/include/c++/13/bits/locale_classes.h \
   /usr/include/c++/13/bits/locale_classes.tcc \
+  /usr/include/c++/13/bits/locale_conv.h \
   /usr/include/c++/13/bits/locale_facets.h \
   /usr/include/c++/13/bits/locale_facets.tcc \
+  /usr/include/c++/13/bits/locale_facets_nonio.h \
+  /usr/include/c++/13/bits/locale_facets_nonio.tcc \
   /usr/include/c++/13/bits/localefwd.h \
   /usr/include/c++/13/bits/max_size_type.h \
   /usr/include/c++/13/bits/memory_resource.h \
@@ -48,9 +60,11 @@ CMakeFiles/chip8-emu.dir/src/Chip8.cpp.o: /home/yot/chip-8-emulator/src/Chip8.cp
   /usr/include/c++/13/bits/new_allocator.h \
   /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
+  /usr/include/c++/13/bits/parse_numbers.h \
   /usr/include/c++/13/bits/postypes.h \
   /usr/include/c++/13/bits/predefined_ops.h \
   /usr/include/c++/13/bits/ptr_traits.h \
+  /usr/include/c++/13/bits/quoted_string.h \
   /usr/include/c++/13/bits/range_access.h \
   /usr/include/c++/13/bits/ranges_algo.h \
   /usr/include/c++/13/bits/ranges_algobase.h \
@@ -59,9 +73,13 @@ CMakeFiles/chip8-emu.dir/src/Chip8.cpp.o: /home/yot/chip-8-emulator/src/Chip8.cp
   /usr/include/c++/13/bits/ranges_util.h \
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
+  /usr/include/c++/13/bits/shared_ptr.h \
+  /usr/include/c++/13/bits/shared_ptr_base.h \
+  /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/stl_algo.h \
   /usr/include/c++/13/bits/stl_algobase.h \
+  /usr/include/c++/13/bits/stl_bvector.h \
   /usr/include/c++/13/bits/stl_construct.h \
   /usr/include/c++/13/bits/stl_deque.h \
   /usr/include/c++/13/bits/stl_function.h \
@@ -73,39 +91,51 @@ CMakeFiles/chip8-emu.dir/src/Chip8.cpp.o: /home/yot/chip-8-emulator/src/Chip8.cp
   /usr/include/c++/13/bits/stl_stack.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
+  /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/uniform_int_dist.h \
+  /usr/include/c++/13/bits/unique_ptr.h \
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
+  /usr/include/c++/13/bits/vector.tcc \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/clocale \
+  /usr/include/c++/13/codecvt \
   /usr/include/c++/13/compare \
   /usr/include/c++/13/concepts \
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
+  /usr/include/c++/13/ctime \
   /usr/include/c++/13/cwchar \
   /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
   /usr/include/c++/13/debug/debug.h \
   /usr/include/c++/13/deque \
   /usr/include/c++/13/exception \
+  /usr/include/c++/13/ext/aligned_buffer.h \
   /usr/include/c++/13/ext/alloc_traits.h \
   /usr/include/c++/13/ext/atomicity.h \
+  /usr/include/c++/13/ext/concurrence.h \
   /usr/include/c++/13/ext/numeric_traits.h \
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
+  /usr/include/c++/13/filesystem \
+  /usr/include/c++/13/fstream \
   /usr/include/c++/13/initializer_list \
+  /usr/include/c++/13/iomanip \
   /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
   /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
+  /usr/include/c++/13/limits \
+  /usr/include/c++/13/locale \
   /usr/include/c++/13/new \
   /usr/include/c++/13/numbers \
   /usr/include/c++/13/optional \
@@ -113,6 +143,8 @@ CMakeFiles/chip8-emu.dir/src/Chip8.cpp.o: /home/yot/chip-8-emulator/src/Chip8.cp
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
+  /usr/include/c++/13/ratio \
+  /usr/include/c++/13/sstream \
   /usr/include/c++/13/stack \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/streambuf \
@@ -122,11 +154,13 @@ CMakeFiles/chip8-emu.dir/src/Chip8.cpp.o: /home/yot/chip-8-emulator/src/Chip8.cp
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
+  /usr/include/c++/13/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/libintl.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
@@ -201,8 +235,10 @@ CMakeFiles/chip8-emu.dir/src/Chip8.cpp.o: /home/yot/chip-8-emulator/src/Chip8.cp
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
@@ -210,7 +246,9 @@ CMakeFiles/chip8-emu.dir/src/Chip8.cpp.o: /home/yot/chip-8-emulator/src/Chip8.cp
   /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -552,7 +590,9 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
   /usr/include/c++/13/bits/algorithmfwd.h \
+  /usr/include/c++/13/bits/align.h \
   /usr/include/c++/13/bits/alloc_traits.h \
+  /usr/include/c++/13/bits/allocated_ptr.h \
   /usr/include/c++/13/bits/allocator.h \
   /usr/include/c++/13/bits/basic_ios.h \
   /usr/include/c++/13/bits/basic_ios.tcc \
@@ -560,6 +600,8 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
   /usr/include/c++/13/bits/basic_string.tcc \
   /usr/include/c++/13/bits/char_traits.h \
   /usr/include/c++/13/bits/charconv.h \
+  /usr/include/c++/13/bits/chrono.h \
+  /usr/include/c++/13/bits/codecvt.h \
   /usr/include/c++/13/bits/concept_check.h \
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
@@ -569,6 +611,11 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
   /usr/include/c++/13/bits/exception_ptr.h \
+  /usr/include/c++/13/bits/fs_dir.h \
+  /usr/include/c++/13/bits/fs_fwd.h \
+  /usr/include/c++/13/bits/fs_ops.h \
+  /usr/include/c++/13/bits/fs_path.h \
+  /usr/include/c++/13/bits/fstream.tcc \
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
   /usr/include/c++/13/bits/hash_bytes.h \
@@ -578,8 +625,11 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
   /usr/include/c++/13/bits/iterator_concepts.h \
   /usr/include/c++/13/bits/locale_classes.h \
   /usr/include/c++/13/bits/locale_classes.tcc \
+  /usr/include/c++/13/bits/locale_conv.h \
   /usr/include/c++/13/bits/locale_facets.h \
   /usr/include/c++/13/bits/locale_facets.tcc \
+  /usr/include/c++/13/bits/locale_facets_nonio.h \
+  /usr/include/c++/13/bits/locale_facets_nonio.tcc \
   /usr/include/c++/13/bits/localefwd.h \
   /usr/include/c++/13/bits/max_size_type.h \
   /usr/include/c++/13/bits/memory_resource.h \
@@ -589,9 +639,11 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
   /usr/include/c++/13/bits/new_allocator.h \
   /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
+  /usr/include/c++/13/bits/parse_numbers.h \
   /usr/include/c++/13/bits/postypes.h \
   /usr/include/c++/13/bits/predefined_ops.h \
   /usr/include/c++/13/bits/ptr_traits.h \
+  /usr/include/c++/13/bits/quoted_string.h \
   /usr/include/c++/13/bits/range_access.h \
   /usr/include/c++/13/bits/ranges_algo.h \
   /usr/include/c++/13/bits/ranges_algobase.h \
@@ -600,9 +652,13 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
   /usr/include/c++/13/bits/ranges_util.h \
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
+  /usr/include/c++/13/bits/shared_ptr.h \
+  /usr/include/c++/13/bits/shared_ptr_base.h \
+  /usr/include/c++/13/bits/sstream.tcc \
   /usr/include/c++/13/bits/std_abs.h \
   /usr/include/c++/13/bits/stl_algo.h \
   /usr/include/c++/13/bits/stl_algobase.h \
+  /usr/include/c++/13/bits/stl_bvector.h \
   /usr/include/c++/13/bits/stl_construct.h \
   /usr/include/c++/13/bits/stl_deque.h \
   /usr/include/c++/13/bits/stl_function.h \
@@ -614,39 +670,51 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
   /usr/include/c++/13/bits/stl_stack.h \
   /usr/include/c++/13/bits/stl_tempbuf.h \
   /usr/include/c++/13/bits/stl_uninitialized.h \
+  /usr/include/c++/13/bits/stl_vector.h \
   /usr/include/c++/13/bits/streambuf.tcc \
   /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/uniform_int_dist.h \
+  /usr/include/c++/13/bits/unique_ptr.h \
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
+  /usr/include/c++/13/bits/vector.tcc \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/clocale \
+  /usr/include/c++/13/codecvt \
   /usr/include/c++/13/compare \
   /usr/include/c++/13/concepts \
   /usr/include/c++/13/cstddef \
   /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
+  /usr/include/c++/13/ctime \
   /usr/include/c++/13/cwchar \
   /usr/include/c++/13/cwctype \
   /usr/include/c++/13/debug/assertions.h \
   /usr/include/c++/13/debug/debug.h \
   /usr/include/c++/13/deque \
   /usr/include/c++/13/exception \
+  /usr/include/c++/13/ext/aligned_buffer.h \
   /usr/include/c++/13/ext/alloc_traits.h \
   /usr/include/c++/13/ext/atomicity.h \
+  /usr/include/c++/13/ext/concurrence.h \
   /usr/include/c++/13/ext/numeric_traits.h \
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
+  /usr/include/c++/13/filesystem \
+  /usr/include/c++/13/fstream \
   /usr/include/c++/13/initializer_list \
+  /usr/include/c++/13/iomanip \
   /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
   /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
+  /usr/include/c++/13/limits \
+  /usr/include/c++/13/locale \
   /usr/include/c++/13/new \
   /usr/include/c++/13/numbers \
   /usr/include/c++/13/optional \
@@ -654,6 +722,8 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
+  /usr/include/c++/13/ratio \
+  /usr/include/c++/13/sstream \
   /usr/include/c++/13/stack \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/streambuf \
@@ -663,11 +733,13 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
+  /usr/include/c++/13/vector \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/libintl.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
   /usr/include/pthread.h \
@@ -744,8 +816,10 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
@@ -753,7 +827,9 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
   /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -765,8 +841,6 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 
-/usr/include/strings.h:
-
 /usr/include/string.h:
 
 /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_video.h:
@@ -776,10 +850,6 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_thread.h:
 
 /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_system.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_surface.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_storage.h:
 
 /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_stdinc.h:
 
@@ -793,57 +863,81 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 
 /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_power.h:
 
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_platform.h:
-
 /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_pen.h:
 
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_mutex.h:
 
-/usr/include/c++/13/bits/streambuf.tcc:
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_misc.h:
 
-/usr/include/c++/13/bits/max_size_type.h:
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_metal.h:
 
-/usr/include/c++/13/typeinfo:
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_locale.h:
 
-/usr/include/c++/13/bits/cxxabi_init_exception.h:
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_loadso.h:
 
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_timer.h:
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_keycode.h:
 
-/usr/include/c++/13/bits/range_access.h:
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_iostream.h:
 
-/usr/include/c++/13/pstl/pstl_config.h:
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_hints.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_hidapi.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_haptic.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_guid.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_events.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_error.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_cpuinfo.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_close_code.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_camera.h:
 
 /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_blendmode.h:
 
-/usr/include/c++/13/pstl/execution_defs.h:
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_bits.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
+/home/yot/chip-8-emulator/src/main.cpp:
 
-/usr/include/c++/13/ostream:
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_begin_code.h:
 
-/usr/include/c++/13/bits/streambuf_iterator.h:
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_assert.h:
 
-/usr/include/c++/13/initializer_list:
+/home/yot/chip-8-emulator/src/Display.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_storage.h:
+
+/usr/include/c++/13/filesystem:
 
 /usr/include/c++/13/ext/string_conversions.h:
 
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_gamepad.h:
+
+/usr/include/c++/13/ext/concurrence.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_log.h:
+
+/usr/include/c++/13/pstl/glue_algorithm_defs.h:
+
 /usr/include/c++/13/cctype:
-
-/usr/include/errno.h:
-
-/usr/include/c++/13/stack:
-
-/usr/include/c++/13/bits/functional_hash.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
 
 /usr/include/c++/13/debug/assertions.h:
 
-/usr/include/c++/13/cstdlib:
+/usr/include/c++/13/ctime:
 
-/usr/include/c++/13/cstdint:
+/usr/include/c++/13/codecvt:
+
+/usr/include/c++/13/deque:
 
 /usr/include/c++/13/cstdio:
+
+/usr/include/c++/13/fstream:
+
+/usr/include/c++/13/bits/fs_path.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
@@ -861,6 +955,10 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 
 /usr/include/c++/13/clocale:
 
+/usr/include/c++/13/cstdint:
+
+/usr/include/c++/13/cstdlib:
+
 /usr/include/c++/13/bits/uses_allocator_args.h:
 
 /usr/include/c++/13/exception:
@@ -873,47 +971,41 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 
 /usr/include/c++/13/bits/postypes.h:
 
-/usr/include/c++/13/bits/stl_stack.h:
+/usr/include/strings.h:
 
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_keycode.h:
+/usr/include/c++/13/iomanip:
 
-/usr/include/c++/13/optional:
+/usr/include/c++/13/bits/align.h:
 
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_process.h:
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/usr/include/c++/13/bits/exception_ptr.h:
+/usr/include/c++/13/bits/streambuf.tcc:
 
-/usr/include/c++/13/bits/istream.tcc:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_iostream.h:
+/usr/include/c++/13/bits/max_size_type.h:
 
 /usr/include/c++/13/bits/new_allocator.h:
 
 /usr/include/c++/13/bits/stl_uninitialized.h:
 
-/usr/include/c++/13/system_error:
-
-/usr/include/c++/13/compare:
+/usr/include/c++/13/locale:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
 /usr/include/asm-generic/errno.h:
 
-/usr/include/c++/13/numbers:
-
-/usr/include/c++/13/bits/ostream.tcc:
-
 /usr/include/c++/13/bits/functexcept.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
-/usr/include/c++/13/new:
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_surface.h:
 
-/usr/include/c++/13/ext/alloc_traits.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_loadso.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h:
 
 /usr/include/c++/13/bits/stl_construct.h:
+
+/usr/include/c++/13/bits/stl_bvector.h:
+
+/usr/include/c++/13/bits/allocator.h:
 
 /usr/include/c++/13/bits/stl_algobase.h:
 
@@ -921,121 +1013,17 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 
 /usr/include/c++/13/cstddef:
 
-/usr/include/c++/13/bits/alloc_traits.h:
-
-/usr/include/c++/13/bits/concept_check.h:
-
-/usr/include/c++/13/cerrno:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
-
-/usr/include/c++/13/bits/exception.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/usr/include/c++/13/iostream:
-
-/usr/include/c++/13/ext/type_traits.h:
-
-/usr/include/c++/13/bits/deque.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/c++/13/bits/cxxabi_forced.h:
-
-/usr/include/c++/13/bits/cpp_type_traits.h:
-
-/usr/include/c++/13/string:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/c++/13/bits/stl_function.h:
-
-/usr/include/c++/13/bits/move.h:
-
-/usr/include/c++/13/bits/locale_facets.h:
-
-/usr/include/c++/13/bits/basic_ios.tcc:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_messagebox.h:
-
-/usr/include/c++/13/bits/basic_string.h:
-
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
-
-/usr/include/features-time64.h:
-
-/usr/include/c++/13/string_view:
-
-/usr/include/c++/13/istream:
-
-/usr/include/c++/13/bits/ranges_base.h:
-
-/usr/include/c++/13/bits/stringfwd.h:
-
-/usr/include/c++/13/bits/iterator_concepts.h:
-
-/usr/include/c++/13/type_traits:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
-
-/usr/include/c++/13/bit:
-
-/usr/include/c++/13/bits/basic_string.tcc:
-
-/usr/include/c++/13/bits/enable_special_members.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_misc.h:
-
-/usr/include/c++/13/iosfwd:
-
-/usr/include/c++/13/bits/ranges_cmp.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_time.h:
-
-/usr/include/c++/13/bits/predefined_ops.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_bits.h:
+/usr/include/c++/13/bits/sstream.tcc:
 
 /usr/include/c++/13/cwctype:
 
-/usr/include/alloca.h:
+/usr/include/c++/13/ratio:
 
-/usr/include/c++/13/bits/ptr_traits.h:
+/usr/include/c++/13/bits/stl_stack.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
+/usr/include/c++/13/bits/shared_ptr.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/c++/13/bits/algorithmfwd.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_joystick.h:
-
-/usr/include/c++/13/algorithm:
-
-/usr/include/c++/13/array:
-
-/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/c++/13/bits/hash_bytes.h:
-
-/usr/include/c++/13/backward/binders.h:
-
-/usr/include/features.h:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/c++/13/bits/string_view.tcc:
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_version.h:
 
@@ -1043,23 +1031,217 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 
 /usr/include/c++/13/bits/locale_facets.tcc:
 
-/usr/include/c++/13/tuple:
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
 
-/usr/include/c++/13/bits/nested_exception.h:
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/13/bits/ranges_cmp.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_time.h:
+
+/usr/include/c++/13/bits/predefined_ops.h:
+
+/usr/include/c++/13/iosfwd:
+
+/usr/include/c++/13/bits/ranges_base.h:
+
+/usr/include/c++/13/bits/stl_function.h:
+
+/usr/include/c++/13/bits/ranges_algobase.h:
+
+/usr/include/c++/13/bits/ostream_insert.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_timer.h:
+
+/usr/include/c++/13/bits/range_access.h:
+
+/usr/include/c++/13/compare:
+
+/usr/include/c++/13/system_error:
+
+/usr/include/c++/13/bits/string_view.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/include/c++/13/bits/quoted_string.h:
+
+/usr/include/c++/13/bits/ptr_traits.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
+
+/home/yot/chip-8-emulator/src/Display.cpp:
+
+/usr/include/c++/13/bits/stl_heap.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_mouse.h:
+
+/usr/include/c++/13/bits/std_abs.h:
+
+/usr/include/c++/13/bits/parse_numbers.h:
+
+/usr/include/c++/13/ext/type_traits.h:
+
+/usr/include/c++/13/bits/deque.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_atomic.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/c++/13/bits/concept_check.h:
+
+/usr/include/c++/13/bits/alloc_traits.h:
+
+/usr/include/c++/13/bits/cxxabi_forced.h:
+
+/usr/include/c++/13/bits/streambuf_iterator.h:
+
+/usr/include/c++/13/ostream:
+
+/usr/include/c++/13/bits/cpp_type_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/c++/13/bits/move.h:
+
+/usr/include/c++/13/bits/fs_ops.h:
+
+/usr/include/c++/13/bits/locale_conv.h:
+
+/usr/include/c++/13/bits/istream.tcc:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_process.h:
+
+/usr/include/c++/13/bits/exception_ptr.h:
+
+/usr/include/c++/13/bits/vector.tcc:
+
+/usr/include/c++/13/optional:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+
+/usr/include/c++/13/bits/basic_string.h:
+
+/usr/include/libintl.h:
+
+/usr/include/c++/13/bits/chrono.h:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/c++/13/bits/stl_vector.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_gpu.h:
+
+/usr/include/c++/13/bits/stl_tempbuf.h:
+
+/usr/include/c++/13/bits/codecvt.h:
+
+/usr/include/c++/13/backward/binders.h:
+
+/usr/include/c++/13/bits/locale_facets_nonio.h:
+
+/usr/include/c++/13/bits/stringfwd.h:
+
+/usr/include/c++/13/bits/iterator_concepts.h:
+
+/usr/include/c++/13/bits/enable_special_members.h:
+
+/usr/include/alloca.h:
+
+/usr/include/c++/13/bits/basic_string.tcc:
+
+/usr/include/c++/13/bits/allocated_ptr.h:
+
+/usr/include/c++/13/bit:
+
+/usr/include/c++/13/bits/refwrap.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
+
+/usr/include/c++/13/bits/fstream.tcc:
+
+/usr/include/c++/13/algorithm:
+
+/usr/include/c++/13/array:
+
+/usr/include/c++/13/bits/hash_bytes.h:
+
+/usr/include/c++/13/bits/exception.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/c++/13/bits/cxxabi_init_exception.h:
+
+/usr/include/c++/13/bits/locale_facets.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_init.h:
+
+/usr/include/c++/13/bits/localefwd.h:
+
+/usr/include/c++/13/ext/aligned_buffer.h:
+
+/usr/include/locale.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_dialog.h:
+
+/usr/include/c++/13/bits/utility.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/c++/13/bits/basic_ios.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_joystick.h:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/c++/13/bits/algorithmfwd.h:
+
+/usr/include/c++/13/ext/alloc_traits.h:
+
+/usr/include/c++/13/new:
+
+/usr/include/c++/13/cerrno:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-least.h:
+
+/usr/include/c++/13/bits/unique_ptr.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
 /home/yot/chip-8-emulator/src/Chip8.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_messagebox.h:
+
+/usr/include/c++/13/bits/basic_ios.tcc:
+
+/usr/include/c++/13/pstl/execution_defs.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
+
+/usr/include/c++/13/bits/fs_fwd.h:
+
+/usr/include/c++/13/bits/memoryfwd.h:
+
+/usr/include/c++/13/bits/functional_hash.h:
+
+/usr/include/c++/13/stack:
+
+/usr/include/errno.h:
 
 /usr/include/c++/13/bits/ios_base.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+/usr/include/c++/13/bits/ostream.tcc:
 
-/usr/include/c++/13/bits/allocator.h:
+/usr/include/c++/13/numbers:
 
 /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_pixels.h:
 
@@ -1067,43 +1249,77 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 
 /usr/include/c++/13/bits/locale_classes.tcc:
 
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_filesystem.h:
+
+/usr/include/c++/13/bits/fs_dir.h:
+
+/usr/include/c++/13/bits/locale_facets_nonio.tcc:
+
+/usr/include/c++/13/bits/ranges_algo.h:
+
+/usr/include/c++/13/bits/invoke.h:
+
 /usr/include/c++/13/streambuf:
 
 /usr/include/c++/13/bits/memory_resource.h:
 
+/usr/include/c++/13/bits/shared_ptr_base.h:
+
 /usr/include/wchar.h:
 
-/usr/include/c++/13/bits/memoryfwd.h:
+/usr/include/c++/13/initializer_list:
 
-/usr/include/c++/13/bits/ostream_insert.h:
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_endian.h:
 
-/usr/include/c++/13/bits/invoke.h:
+/usr/include/c++/13/ios:
 
-/usr/include/c++/13/bits/ranges_algo.h:
+/usr/include/c++/13/iostream:
+
+/usr/include/c++/13/istream:
+
+/usr/include/c++/13/pstl/pstl_config.h:
 
 /usr/include/c++/13/stdexcept:
 
-/usr/include/linux/errno.h:
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/c++/13/string:
+
+/usr/include/c++/13/string_view:
+
+/usr/include/features-time64.h:
+
+/usr/include/c++/13/bits/nested_exception.h:
+
+/usr/include/c++/13/tuple:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
+
+/usr/include/c++/13/type_traits:
+
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/usr/include/c++/13/vector:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_asyncio.h:
+
+/usr/include/ctype.h:
+
+/usr/include/features.h:
 
 /usr/include/c++/13/debug/debug.h:
 
-/usr/include/c++/13/deque:
+/usr/include/linux/errno.h:
 
-/usr/include/c++/13/bits/ranges_algobase.h:
-
-/usr/include/c++/13/bits/refwrap.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/locale.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_haptic.h:
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/pthread.h:
 
 /usr/include/wctype.h:
 
 /usr/include/sched.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h:
 
 /usr/include/stdc-predef.h:
 
@@ -1129,10 +1345,6 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
-/usr/include/c++/13/pstl/glue_algorithm_defs.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_log.h:
-
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
 /usr/include/x86_64-linux-gnu/bits/cpu-set.h:
@@ -1140,6 +1352,8 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 /usr/include/c++/13/bits/requires_hosted.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/c++/13/limits:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
@@ -1149,29 +1363,27 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
-/usr/include/ctype.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_asyncio.h:
-
 /usr/include/time.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_audio.h:
+
+/usr/include/c++/13/cwchar:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_atomic.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_metal.h:
 
 /usr/include/c++/13/bits/locale_classes.h:
 
@@ -1185,17 +1397,25 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_clipboard.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_keyboard.h:
+
+/usr/include/c++/13/bits/charconv.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
-/usr/include/c++/13/bits/stl_heap.h:
-
-/home/yot/chip-8-emulator/src/Display.cpp:
-
 /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_properties.h:
+
+/usr/include/c++/13/sstream:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
@@ -1217,8 +1437,6 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
-/usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
 /usr/include/c++/13/bits/exception_defines.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
@@ -1226,6 +1444,14 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_platform.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h:
+
+/usr/include/c++/13/typeinfo:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h:
 
 /usr/include/c++/13/bits/ranges_util.h:
 
@@ -1256,77 +1482,3 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_oldnames.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
-
-/usr/include/c++/13/bits/std_abs.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_mouse.h:
-
-/home/yot/chip-8-emulator/src/Display.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_hints.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_hidapi.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_assert.h:
-
-/usr/include/c++/13/cwchar:
-
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_audio.h:
-
-/home/yot/chip-8-emulator/src/main.cpp:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_begin_code.h:
-
-/usr/include/c++/13/ios:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_endian.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_camera.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_clipboard.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_close_code.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_cpuinfo.h:
-
-/usr/include/c++/13/bits/utility.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_dialog.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_error.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_events.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_filesystem.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_gamepad.h:
-
-/usr/include/c++/13/bits/stl_tempbuf.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_gpu.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_guid.h:
-
-/usr/include/c++/13/bits/localefwd.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_init.h:
-
-/usr/include/c++/13/bits/charconv.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_keyboard.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_locale.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_mutex.h:

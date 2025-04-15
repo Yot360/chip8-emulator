@@ -1,10 +1,19 @@
 #include "Chip8.h"
 
-Chip8::Chip8() :
+Chip8::Chip8(std::string rom_path) :
 	m_memory{}, m_pixels{}
 {
 	// Copy font to memory
 	std::copy(FONT.begin(), FONT.end(), m_memory.begin() + 80);
+
+	// Read ROM
+	std::ifstream stream(rom_path, std::ios::binary);
+	const std::size_t rom_size = std::filesystem::file_size(rom_path);
+	std::vector<uint8_t> buffer(rom_size);
+	stream.read(reinterpret_cast<char*>(buffer.data()), rom_size);
+
+	// Copy ROM to memory
+	std::copy(buffer.begin(), buffer.end(), m_memory.begin() + 512);
 }
 
 void Chip8::update()

@@ -6,6 +6,9 @@
 #include <iostream>
 #include <algorithm>
 #include <stack>
+#include <filesystem>
+#include <fstream>
+#include <vector>
 
 class Chip8
 {
@@ -53,7 +56,7 @@ private:
 
 
 public:
-	Chip8();
+	Chip8(std::string rom_path);
 	virtual ~Chip8();
 
 	void update();

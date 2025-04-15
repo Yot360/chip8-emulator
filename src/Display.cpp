@@ -16,9 +16,62 @@ bool Display::init()
 
 void Display::poll_events(bool* keys)
 {
-	while (SDL_PollEvent(&m_event)) {
+	while (SDL_PollEvent(&m_event) != 0) {
 		if (m_event.type == SDL_EVENT_QUIT) {
 			is_running = false;
+		}
+		else if (m_event.type == SDL_EVENT_KEY_DOWN || m_event.type == SDL_EVENT_KEY_UP) {
+			bool is_down = (m_event.type == SDL_EVENT_KEY_DOWN);
+			switch (m_event.key.scancode) {
+				case SDL_SCANCODE_1:
+					keys[0x1] = is_down;
+					break;
+				case SDL_SCANCODE_2:
+					keys[0x2] = is_down;
+					break;
+				case SDL_SCANCODE_3:
+					keys[0x3] = is_down;
+					break;
+				case SDL_SCANCODE_4:
+					keys[0xC] = is_down;
+					break;
+				case SDL_SCANCODE_Q:
+					keys[0x4] = is_down;
+					break;
+				case SDL_SCANCODE_W:
+					keys[0x5] = is_down;
+					break;
+				case SDL_SCANCODE_E:
+					keys[0x6] = is_down;
+					break;
+				case SDL_SCANCODE_R:
+					keys[0xD] = is_down;
+					break;
+				case SDL_SCANCODE_A:
+					keys[0x7] = is_down;
+					break;
+				case SDL_SCANCODE_S:
+					keys[0x8] = is_down;
+					break;
+				case SDL_SCANCODE_D:
+					keys[0x9] = is_down;
+					break;
+				case SDL_SCANCODE_F:
+					keys[0xE] = is_down;
+					break;
+				case SDL_SCANCODE_Z:
+					keys[0xA] = is_down;
+					break;
+				case SDL_SCANCODE_X:
+					keys[0x0] = is_down;
+					break;
+				case SDL_SCANCODE_C:
+					keys[0xB] = is_down;
+					break;
+				case SDL_SCANCODE_V:
+					keys[0xF] = is_down;
+					break;
+			}
 		}
 	}
 }
