@@ -9,8 +9,6 @@ bool Display::init()
 
 	m_screen_surface = SDL_GetWindowSurface(m_window);
 
-	std::cout << "window created" << std::endl;
-
 	return true;
 }
 
@@ -108,7 +106,7 @@ void Display::render(uint8_t* buffer)
 					scale,
 					scale
 				};
-				SDL_RenderRect(m_renderer, &pixel_rect);
+				SDL_RenderFillRect(m_renderer, &pixel_rect);
 			}
 		}
 	}

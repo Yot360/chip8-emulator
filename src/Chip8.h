@@ -2,9 +2,8 @@
 #define CHIP8_H
 
 #include <cstdint>
+#include <cstring>
 #include <array>
-#include <iostream>
-#include <algorithm>
 #include <stack>
 #include <filesystem>
 #include <fstream>

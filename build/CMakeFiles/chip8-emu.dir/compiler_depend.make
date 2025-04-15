@@ -112,6 +112,7 @@ CMakeFiles/chip8-emu.dir/src/Chip8.cpp.o: /home/yot/chip-8-emulator/src/Chip8.cp
   /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
+  /usr/include/c++/13/cstring \
   /usr/include/c++/13/ctime \
   /usr/include/c++/13/cwchar \
   /usr/include/c++/13/cwctype \
@@ -169,6 +170,8 @@ CMakeFiles/chip8-emu.dir/src/Chip8.cpp.o: /home/yot/chip-8-emulator/src/Chip8.cp
   /usr/include/stdint.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
   /usr/include/wctype.h \
@@ -691,6 +694,7 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
   /usr/include/c++/13/cstdint \
   /usr/include/c++/13/cstdio \
   /usr/include/c++/13/cstdlib \
+  /usr/include/c++/13/cstring \
   /usr/include/c++/13/ctime \
   /usr/include/c++/13/cwchar \
   /usr/include/c++/13/cwctype \
@@ -841,8 +845,6 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
 
-/usr/include/string.h:
-
 /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_video.h:
 
 /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_touch.h:
@@ -909,6 +911,14 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 
 /home/yot/chip-8-emulator/src/Display.h:
 
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_oldnames.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
+
 /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_storage.h:
 
 /usr/include/c++/13/filesystem:
@@ -935,9 +945,9 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 
 /usr/include/c++/13/cstdio:
 
-/usr/include/c++/13/fstream:
-
 /usr/include/c++/13/bits/fs_path.h:
+
+/usr/include/c++/13/fstream:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
@@ -971,9 +981,7 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 
 /usr/include/c++/13/bits/postypes.h:
 
-/usr/include/strings.h:
-
-/usr/include/c++/13/iomanip:
+/usr/include/c++/13/cstring:
 
 /usr/include/c++/13/bits/align.h:
 
@@ -1293,8 +1301,6 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 
 /usr/include/c++/13/tuple:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h:
-
 /usr/include/c++/13/type_traits:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
@@ -1334,6 +1340,20 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_platform_defines.h:
 
 /usr/include/stdlib.h:
+
+/usr/include/string.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_platform.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h:
+
+/usr/include/c++/13/iomanip:
+
+/usr/include/strings.h:
+
+/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL.h:
+
+/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
@@ -1376,10 +1396,6 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL.h:
-
-/usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/x86_64-linux-gnu/bits/select.h:
 
@@ -1445,10 +1461,6 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
 
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_platform.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h:
-
 /usr/include/c++/13/typeinfo:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h:
@@ -1476,9 +1488,3 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: /home/yot/chip-8-emulator/src/main.cpp 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h:
-
-/home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_oldnames.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:

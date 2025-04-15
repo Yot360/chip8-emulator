@@ -181,6 +181,7 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/fs_dir.h /usr/include/c++/13/bits/fs_ops.h \
  /usr/include/c++/13/iostream /home/yot/chip-8-emulator/src/Chip8.h \
+ /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
  /usr/include/c++/13/array /usr/include/c++/13/algorithm \
  /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
@@ -205,7 +206,6 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: \
  /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL.h \
  /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_stdinc.h \
  /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_platform_defines.h \
- /usr/include/string.h /usr/include/strings.h \
  /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_begin_code.h \
  /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_close_code.h \
  /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_assert.h \
