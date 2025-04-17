@@ -5,8 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/chip8-emu.dir/src/Display.cpp.o.d"
   "CMakeFiles/chip8-emu.dir/src/main.cpp.o"
   "CMakeFiles/chip8-emu.dir/src/main.cpp.o.d"
-  "chip8-emu"
-  "chip8-emu.pdb"
+  "DEBUG/chip8-emu"
+  "DEBUG/chip8-emu.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

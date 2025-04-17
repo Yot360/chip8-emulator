@@ -101,7 +101,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "vendor/SDL/include-revision/SDL3/SDL_revision.h"
   "vendor/SDL/SDL3Config.cmake"
   "vendor/SDL/SDL3ConfigVersion.cmake"
-  "vendor/SDL/include-config-/build_config/SDL_build_config.h"
+  "vendor/SDL/include-config-debug/build_config/SDL_build_config.h"
   "vendor/SDL/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

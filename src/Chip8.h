@@ -8,6 +8,7 @@
 #include <filesystem>
 #include <fstream>
 #include <vector>
+#include <iostream>
 
 class Chip8
 {
@@ -52,6 +53,9 @@ private:
 		0xF0, 0x80, 0xF0, 0x80, 0xF0, // E
 		0xF0, 0x80, 0xF0, 0x80, 0x80  // F
 	};
+
+	bool m_waiting_for_key = false;
+	uint8_t m_waiting_register = 0;
 
 
 public:

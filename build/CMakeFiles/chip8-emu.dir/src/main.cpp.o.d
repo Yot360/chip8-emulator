@@ -182,17 +182,7 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/fs_dir.h /usr/include/c++/13/bits/fs_ops.h \
  /usr/include/c++/13/iostream /home/yot/chip-8-emulator/src/Chip8.h \
  /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
- /usr/include/c++/13/array /usr/include/c++/13/algorithm \
- /usr/include/c++/13/bits/stl_algo.h \
- /usr/include/c++/13/bits/algorithmfwd.h \
- /usr/include/c++/13/bits/stl_heap.h \
- /usr/include/c++/13/bits/uniform_int_dist.h \
- /usr/include/c++/13/bits/stl_tempbuf.h \
- /usr/include/c++/13/bits/ranges_algo.h /usr/include/c++/13/optional \
- /usr/include/c++/13/bits/enable_special_members.h \
- /usr/include/c++/13/bits/ranges_algobase.h \
- /usr/include/c++/13/pstl/glue_algorithm_defs.h \
- /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/stack \
+ /usr/include/c++/13/array /usr/include/c++/13/stack \
  /usr/include/c++/13/deque /usr/include/c++/13/bits/stl_deque.h \
  /usr/include/c++/13/bits/deque.tcc /usr/include/c++/13/bits/stl_stack.h \
  /usr/include/c++/13/fstream \
@@ -261,4 +251,14 @@ CMakeFiles/chip8-emu.dir/src/main.cpp.o: \
  /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_timer.h \
  /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_tray.h \
  /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_version.h \
- /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_oldnames.h
+ /home/yot/chip-8-emulator/vendor/SDL/include/SDL3/SDL_oldnames.h \
+ /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
+ /usr/include/c++/13/bits/algorithmfwd.h \
+ /usr/include/c++/13/bits/stl_heap.h \
+ /usr/include/c++/13/bits/uniform_int_dist.h \
+ /usr/include/c++/13/bits/stl_tempbuf.h \
+ /usr/include/c++/13/bits/ranges_algo.h /usr/include/c++/13/optional \
+ /usr/include/c++/13/bits/enable_special_members.h \
+ /usr/include/c++/13/bits/ranges_algobase.h \
+ /usr/include/c++/13/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/13/pstl/execution_defs.h

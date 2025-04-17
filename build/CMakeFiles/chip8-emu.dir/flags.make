@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/yot/chip-8-emulator/src -I/home/yot/chip-8-emulator/build/vendor/SDL/include-revision -I/home/yot/chip-8-emulator/vendor/SDL/include
 
-CXX_FLAGS = -std=gnu++23
+CXX_FLAGS = -g -g -std=gnu++23
 
