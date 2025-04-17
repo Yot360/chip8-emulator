@@ -126,17 +126,19 @@ void Chip8::update()
 				// Add
 				case 0x0004:{
 					uint16_t sum = m_V[X] + m_V[Y]; // temp
+					uint8_t vf = (sum > 0xFF) ? 1 : 0; // Checks if the result overflows 255, if yes VF -> 1
 					m_V[X] = sum & 0xFF; // Store low 8 bits in VX
-					m_V[0xF] = (sum > 0xFF) ? 1 : 0; // Checks if the result overflows 255, if yes VF -> 1
+					m_V[0xF] = vf;
 					break;
 				}
 				// Substract
-				case 0x0005:
-					m_V[0xF] = 1;
-					if (m_V[X] < m_V[Y])
-						m_V[0xF] = 0;
-					m_V[X] = m_V[X] - m_V[Y];
+				case 0x0005: {
+					uint8_t vf = (m_V[X] >= m_V[Y]) ? 1 : 0; // Checks if VX is >= than VY if not we need to borrow, if yes VF -> 1
+					uint8_t sub = m_V[X] - m_V[Y];
+					m_V[X] = sub;
+					m_V[0xF] = vf;
 					break;
+				}
 				// Shift right
 				case 0x0006:
 					m_V[X] = m_V[Y]; // Optional
@@ -144,12 +146,13 @@ void Chip8::update()
 					m_V[X] = m_V[X] >> 1;
 					break;
 				// Substract
-				case 0x0007:
-					m_V[0xF] = 1;
-					if (m_V[Y] < m_V[X])
-						m_V[0xF] = 0;
-					m_V[X] = m_V[Y] - m_V[X];
+				case 0x0007: {
+					uint8_t vf = (m_V[Y] >= m_V[X]) ? 1 : 0; // Checks if VY is >= than VX if not we need to borrow, if yes VF -> 1
+					uint8_t sub = m_V[Y] - m_V[X];
+					m_V[X] = sub;
+					m_V[0xF] = vf;
 					break;
+				}
 				// Shift left
 				case 0x000E:
 					m_V[X] = m_V[Y]; // Optional
@@ -203,11 +206,11 @@ void Chip8::update()
 		}
 		// Skip if key
 		case 0xE:
-			if ((instruction & 0x000F) == 0x000E) {
+			if ((instruction & 0x00FF) == 0x009E) {
 				if (keys[m_V[X]])
 					m_pc += 2;
 			}
-			else if ((instruction & 0x000F) == 0x0001) {
+			else if ((instruction & 0x00FF) == 0x00A1) {
 				if (!keys[m_V[X]])
 					m_pc += 2;
 			}
