@@ -124,13 +124,12 @@ void Chip8::update()
 					m_V[X] = m_V[X] ^ m_V[Y];
 					break;
 				// Add
-				case 0x0004:
-					m_V[X] = m_V[X] + m_V[Y];
-					if (m_V[X] + m_V[Y] > 255)
-						m_V[0xF] = 1;
-					else
-						m_V[0xF] = 0;
+				case 0x0004:{
+					uint16_t sum = m_V[X] + m_V[Y]; // temp
+					m_V[X] = sum & 0xFF; // Store low 8 bits in VX
+					m_V[0xF] = (sum > 0xFF) ? 1 : 0; // Checks if the result overflows 255, if yes VF -> 1
 					break;
+				}
 				// Substract
 				case 0x0005:
 					m_V[0xF] = 1;
@@ -138,13 +137,10 @@ void Chip8::update()
 						m_V[0xF] = 0;
 					m_V[X] = m_V[X] - m_V[Y];
 					break;
-				// Shift
+				// Shift right
 				case 0x0006:
 					m_V[X] = m_V[Y]; // Optional
-					if ((m_V[X] & 00000001) == 1)
-						m_V[0xF] = 1;
-					else
-						m_V[0xF] = 0;
+					m_V[0xF] = m_V[X] & 0x1;
 					m_V[X] = m_V[X] >> 1;
 					break;
 				// Substract
@@ -154,13 +150,10 @@ void Chip8::update()
 						m_V[0xF] = 0;
 					m_V[X] = m_V[Y] - m_V[X];
 					break;
-				// Shift
+				// Shift left
 				case 0x000E:
 					m_V[X] = m_V[Y]; // Optional
-					if ((m_V[X] & 10000000) == 1)
-						m_V[0xF] = 1;
-					else
-						m_V[0xF] = 0;
+					m_V[0xF] = (m_V[X] >> 7) & 0x1;
 					m_V[X] = m_V[X] << 1;
 					break;
 			}
