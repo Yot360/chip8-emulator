@@ -138,11 +138,13 @@ void Chip8::update()
 					break;
 				}
 				// Shift right
-				case 0x0006:
-					m_V[X] = m_V[Y]; // Optional
-					m_V[0xF] = m_V[X] & 0x1;
-					m_V[X] = m_V[X] >> 1;
+				case 0x0006: {
+					uint8_t res = m_V[Y];
+					uint8_t vf = res & 0x1;
+					m_V[X] = res >> 1;
+					m_V[0xF] = vf;
 					break;
+				}
 				// Substract
 				case 0x0007: {
 					uint8_t vf = (m_V[Y] >= m_V[X]) ? 1 : 0; // Checks if VY is >= than VX if not we need to borrow, if yes VF -> 1
@@ -152,11 +154,13 @@ void Chip8::update()
 					break;
 				}
 				// Shift left
-				case 0x000E:
-					m_V[X] = m_V[Y]; // Optional
-					m_V[0xF] = (m_V[X] >> 7) & 0x1;
-					m_V[X] = m_V[X] << 1;
+				case 0x000E: {
+					uint8_t res = m_V[Y];
+					uint8_t vf = (res >> 7) & 0x1;
+					m_V[X] = res << 1; // Optional
+					m_V[0xF] = vf;
 					break;
+				}
 			}
 			break;
 		// Skip conditionally
