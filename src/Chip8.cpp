@@ -26,6 +26,7 @@ void Chip8::update()
 				m_V[m_waiting_register] = i;
 				m_waiting_for_key = false;
 				m_pc += 2;
+				keys[i] = false;
 				break;
 			}
 		}

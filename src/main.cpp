@@ -13,8 +13,8 @@ int main(int argc, char *argv[])
 	}
 
 	// Timing constants
-	const int TARGET_FPS = 60;             // Display refresh rate
-	const int FRAME_DELAY = 1000 / TARGET_FPS;  // ~16.666ms per frame
+	const int TARGET_FPS = 60; // Display refresh rate
+	const int FRAME_DELAY = 1000 / TARGET_FPS; // ~16.666ms per frame
 	int frame_start, frame_time, timer_accumulator = 0;
 
 	// Emulator related objects, init SDL and emulator variables
@@ -24,9 +24,6 @@ int main(int argc, char *argv[])
 	// Emulator loop
 	while (display.is_running) {
 		frame_start = SDL_GetTicks();
-
-		// Get inputs
-		display.poll_events(chip8.keys);
 
 		// Update timers at 60Hz
 		timer_accumulator += FRAME_DELAY;
@@ -40,8 +37,13 @@ int main(int argc, char *argv[])
 			chip8.update();
 		}
 
+		// Get inputs
+		display.poll_events(chip8.keys, chip8.keys_down, chip8.is_waiting_for_key());
+
+		// Draw
 		display.render(chip8.pixels);
 
+		// Delay to limit FPS
 		frame_time = SDL_GetTicks() - frame_start;
 		if (frame_time > FRAME_DELAY) {
 			SDL_Delay(FRAME_DELAY - frame_time);

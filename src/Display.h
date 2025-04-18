@@ -26,7 +26,7 @@ public:
 
 	bool init();
 	void update_timers(uint8_t& delay_timer, uint8_t& sound_timer);
-	void poll_events(bool* keys);
+	void poll_events(bool* keys, bool* keys_down, bool waiting_for_key);
 	void render(uint8_t* buffer);
 	void loop();
 };

@@ -62,7 +62,10 @@ public:
 
 	void update();
 
+	bool is_waiting_for_key() const { return m_waiting_for_key; }
+
 	bool keys[16];
+	bool keys_down[16];
 
 	// Display: 64 x 32 pixels (or 128 x 64 for SUPER-CHIP) monochrome, ie. black or white
 	uint8_t pixels[SCREEN_WIDTH * SCREEN_HEIGHT];

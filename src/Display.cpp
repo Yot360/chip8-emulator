@@ -1,4 +1,5 @@
 #include "Display.h"
+#include <iostream>
 
 Display::Display() : m_window(nullptr), m_renderer(nullptr), m_screen_surface(nullptr), m_last_timer_update(0), is_running(true)
 {
@@ -25,67 +26,86 @@ void Display::update_timers(uint8_t& delay_timer, uint8_t& sound_timer)
 		}
 
 		m_last_timer_update = now;
+		std::cout << static_cast<int>(delay_timer) << std::endl;
 	}
 }
 
-void Display::poll_events(bool* keys)
+void Display::poll_events(bool* keys, bool* keys_down, bool waiting_for_key)
 {
 	while (SDL_PollEvent(&m_event) != 0) {
 		if (m_event.type == SDL_EVENT_QUIT) {
 			is_running = false;
 		}
 		else if (m_event.type == SDL_EVENT_KEY_DOWN || m_event.type == SDL_EVENT_KEY_UP) {
-			bool is_down = (m_event.type == SDL_EVENT_KEY_DOWN);
+			int chip8_key = -1;
+
 			switch (m_event.key.scancode) {
 				case SDL_SCANCODE_1:
-					keys[0x1] = is_down;
+					chip8_key = 0x1;
 					break;
 				case SDL_SCANCODE_2:
-					keys[0x2] = is_down;
+					chip8_key = 0x2;
 					break;
 				case SDL_SCANCODE_3:
-					keys[0x3] = is_down;
+					chip8_key = 0x3;
 					break;
 				case SDL_SCANCODE_4:
-					keys[0xC] = is_down;
+					chip8_key = 0xC;
 					break;
 				case SDL_SCANCODE_Q:
-					keys[0x4] = is_down;
+					chip8_key = 0x4;
 					break;
 				case SDL_SCANCODE_W:
-					keys[0x5] = is_down;
+					chip8_key = 0x5;
 					break;
 				case SDL_SCANCODE_E:
-					keys[0x6] = is_down;
+					chip8_key = 0x6;
 					break;
 				case SDL_SCANCODE_R:
-					keys[0xD] = is_down;
+					chip8_key = 0xD;
 					break;
 				case SDL_SCANCODE_A:
-					keys[0x7] = is_down;
+					chip8_key = 0x7;
 					break;
 				case SDL_SCANCODE_S:
-					keys[0x8] = is_down;
+					chip8_key = 0x8;
 					break;
 				case SDL_SCANCODE_D:
-					keys[0x9] = is_down;
+					chip8_key = 0x9;
 					break;
 				case SDL_SCANCODE_F:
-					keys[0xE] = is_down;
+					chip8_key = 0xE;
 					break;
 				case SDL_SCANCODE_Z:
-					keys[0xA] = is_down;
+					chip8_key = 0xA;
 					break;
 				case SDL_SCANCODE_X:
-					keys[0x0] = is_down;
+					chip8_key = 0x0;
 					break;
 				case SDL_SCANCODE_C:
-					keys[0xB] = is_down;
+					chip8_key = 0xB;
 					break;
 				case SDL_SCANCODE_V:
-					keys[0xF] = is_down;
+					chip8_key = 0xF;
 					break;
 			}
+
+			if (chip8_key != -1 && waiting_for_key) {
+				if (m_event.type == SDL_EVENT_KEY_DOWN) {
+					keys_down[chip8_key] = true;
+				}
+				else if (m_event.type == SDL_EVENT_KEY_UP) {
+					if (keys_down[chip8_key]) {
+						keys[chip8_key] = true;  // Register the press only when released
+						keys_down[chip8_key] = false;
+					}
+				}
+			}
+			else if (chip8_key != -1 && !waiting_for_key) {
+				bool is_down = (m_event.type == SDL_EVENT_KEY_DOWN);
+				keys[chip8_key] = is_down;
+			}
+
 		}
 	}
 }
