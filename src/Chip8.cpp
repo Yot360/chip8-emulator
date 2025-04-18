@@ -242,6 +242,20 @@ void Chip8::update()
 					m_memory[m_I+2] = number % 10; // Ones
 					break;
 				}
+				// Store memory
+				case 0x55:
+					for (int i = 0; i <= X; i++) {
+						m_memory[m_I+i] = m_V[i];
+					}
+					break;
+				// Load memory
+				case 0x65: {
+					uint16_t temp_I = m_I;
+					for (int i = 0; i <= X; i++) {
+						m_V[i] = m_memory[temp_I+i];
+					}
+					break;
+				}
 			}
 			break;
 
