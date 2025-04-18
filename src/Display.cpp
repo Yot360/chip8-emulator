@@ -1,6 +1,6 @@
 #include "Display.h"
 
-bool Display::init()
+Display::Display() : m_window(nullptr), m_renderer(nullptr), m_screen_surface(nullptr), m_last_timer_update(0), is_running(true)
 {
 	// Init SDL
 	SDL_Init(SDL_INIT_VIDEO);
@@ -8,8 +8,24 @@ bool Display::init()
 	SDL_CreateWindowAndRenderer("Chip-8 Emulator", 800, 400, SDL_WINDOW_RESIZABLE, &m_window, &m_renderer);
 
 	m_screen_surface = SDL_GetWindowSurface(m_window);
+}
 
-	return true;
+void Display::update_timers(uint8_t& delay_timer, uint8_t& sound_timer)
+{
+	uint32_t now = SDL_GetTicks(); // milliseconds since SDL init
+	if (now - m_last_timer_update >= 1000 / 60) { // ~16ms
+		if (delay_timer > 0)
+			delay_timer--;
+
+		if (sound_timer > 0) {
+			sound_timer--;
+			if (sound_timer == 0) {
+				// Stop sound here
+			}
+		}
+
+		m_last_timer_update = now;
+	}
 }
 
 void Display::poll_events(bool* keys)
@@ -112,4 +128,9 @@ void Display::render(uint8_t* buffer)
 	}
 
 	SDL_RenderPresent(m_renderer);
+}
+
+Display::~Display()
+{
+
 }

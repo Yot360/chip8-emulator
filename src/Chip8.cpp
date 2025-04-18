@@ -1,7 +1,7 @@
 #include "Chip8.h"
 #include <cstdint>
 
-Chip8::Chip8(std::string rom_path) : m_memory{}, m_pixels{}, m_pc(512) {
+Chip8::Chip8(std::string rom_path) : m_memory{}, pixels{}, m_pc(512), keys{}, delay_timer(0), sound_timer(0) {
   // Copy font to memory
   std::copy(FONT.begin(), FONT.end(), m_memory.begin() + 80);
 
@@ -20,13 +20,6 @@ Chip8::Chip8(std::string rom_path) : m_memory{}, m_pixels{}, m_pc(512) {
 
 void Chip8::update()
 {
-	if (m_delay_timer > 0) {
-		m_delay_timer--;
-	}
-	if (m_sound_timer > 0) {
-		m_sound_timer--;
-	}
-
 	if (m_waiting_for_key) {
 		for (int i = 0; i < 16; ++i) {
 			if (keys[i]) {
@@ -65,7 +58,7 @@ void Chip8::update()
 		// Clear screen
 		case 0x0:
 			if (instruction == 0x00E0)
-				std::memset(m_pixels, 0, sizeof(m_pixels));
+				std::memset(pixels, 0, sizeof(pixels));
 			// Returns from subroutine
 			else if (instruction == 0x00EE) {
 				m_pc = m_stack.top();
@@ -191,12 +184,12 @@ void Chip8::update()
 					uint8_t sprite_pixel = (sprite_byte >> (7 - col)) & 1;
 					int x_coordinate = (x+col)%64;
 					int y_coordinate = (y+row)%32;
-					if (sprite_pixel && m_pixels[y_coordinate*64 + x_coordinate]) {
-						m_pixels[y_coordinate*64 + x_coordinate] = 0;
+					if (sprite_pixel && pixels[y_coordinate*64 + x_coordinate]) {
+						pixels[y_coordinate*64 + x_coordinate] = 0;
 						m_V[0xF] = 1;
 					}
-					else if (sprite_pixel && !m_pixels[y_coordinate*64 + x_coordinate]) {
-						m_pixels[y_coordinate*64 + x_coordinate] = 1;
+					else if (sprite_pixel && !pixels[y_coordinate*64 + x_coordinate]) {
+						pixels[y_coordinate*64 + x_coordinate] = 1;
 					}
 
 					if (x_coordinate >= SCREEN_WIDTH) {
@@ -222,8 +215,13 @@ void Chip8::update()
 			switch (instruction & 0x00FF){
 				// Timers
 				case 0x07:
+					m_V[X] = delay_timer;
+					break;
 				case 0x15:
+					delay_timer = m_V[X];
+					break;
 				case 0x18:
+					sound_timer = m_V[X];
 					break;
 				// Add to index
 				case 0x1E:

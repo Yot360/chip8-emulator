@@ -26,12 +26,6 @@ private:
 	// A stack for 16-bit addresses, which is used to call subroutines/functions and return from them
 	std::stack<uint16_t> m_stack;
 
-	// An 8-bit delay timer which is decremented at a rate of 60 Hz (60 times per second) until it reaches 0
-	uint8_t m_delay_timer;
-
-	// An 8-bit sound timer which functions like the delay timer, but which also gives off a beeping sound as long as it’s not 0
-	uint8_t m_sound_timer;
-
 	// 16 8-bit (one byte) general-purpose variable registers numbered 0 through F hexadecimal, ie. 0 through 15 in decimal, called V0 through VF
 	std::array<uint8_t, 16> m_V;
 
@@ -55,6 +49,9 @@ private:
 		0xF0, 0x80, 0xF0, 0x80, 0x80  // F
 	};
 
+	static constexpr int SCREEN_WIDTH = 64;
+	static constexpr int SCREEN_HEIGHT = 32;
+
 	bool m_waiting_for_key = false;
 	uint8_t m_waiting_register = 0;
 
@@ -68,9 +65,13 @@ public:
 	bool keys[16];
 
 	// Display: 64 x 32 pixels (or 128 x 64 for SUPER-CHIP) monochrome, ie. black or white
-	static constexpr int SCREEN_WIDTH = 64;
-	static constexpr int SCREEN_HEIGHT = 32;
-	uint8_t m_pixels[SCREEN_WIDTH * SCREEN_HEIGHT];
+	uint8_t pixels[SCREEN_WIDTH * SCREEN_HEIGHT];
+
+	// An 8-bit delay timer which is decremented at a rate of 60 Hz (60 times per second) until it reaches 0
+	uint8_t delay_timer;
+
+	// An 8-bit sound timer which functions like the delay timer, but which also gives off a beeping sound as long as it’s not 0
+	uint8_t sound_timer;
 };
 
 #endif /* CHIP8_H */
