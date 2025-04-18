@@ -1,4 +1,5 @@
 #include "Chip8.h"
+#include <cstdint>
 
 Chip8::Chip8(std::string rom_path) : m_memory{}, m_pixels{}, m_pc(512) {
   // Copy font to memory
@@ -43,8 +44,6 @@ void Chip8::update()
 		exit(1);
 	}
 
-	uint16_t opcode = (m_memory[m_pc] << 8) | m_memory[m_pc + 1];
-	std::cout << "Executing opcode: " << std::hex << opcode << " at PC: " << m_pc << "\n";
 	// Fetch instructions that PC is currently pointing at from memory.
 	// Example :
 	// m_memory[m_pc] = 0xAB = 10101011
@@ -65,7 +64,6 @@ void Chip8::update()
 	switch (instruction >> 12) {
 		// Clear screen
 		case 0x0:
-			std::cout << std::hex << instruction << std::endl;
 			if (instruction == 0x00E0)
 				std::memset(m_pixels, 0, sizeof(m_pixels));
 			// Returns from subroutine
@@ -236,6 +234,14 @@ void Chip8::update()
 				case 0x29:
 					m_I = 0x50 + (m_V[X] & 0x0F) * 5;
 					break;
+				// Binary-coded decimal conversion
+				case 0x33: {
+					uint8_t number = m_V[X];
+					m_memory[m_I] = number/100; // Hundreds
+					m_memory[m_I+1] = (number/10) % 10; // Tens
+					m_memory[m_I+2] = number % 10; // Ones
+					break;
+				}
 			}
 			break;
 
