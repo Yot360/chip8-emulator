@@ -50,6 +50,7 @@ jobs:
         submodules: true
 
     - name: Install X11 and Wayland dev packages
+      if: matrix.os == 'ubuntu-latest'
       run: |
         sudo apt-get update && sudo apt-get install -y \
         libx11-dev libxext-dev libxrandr-dev libxrender-dev libxcursor-dev libxi-dev \
@@ -70,6 +71,7 @@ jobs:
         -DCMAKE_CXX_COMPILER=${{ matrix.cpp_compiler }}
         -DCMAKE_C_COMPILER=${{ matrix.c_compiler }}
         -DCMAKE_BUILD_TYPE=${{ matrix.build_type }}
+        -DSDL_WINDOWS_GAMEINPUT=OFF
         -S ${{ github.workspace }}
 
     - name: Build
