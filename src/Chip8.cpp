@@ -2,20 +2,20 @@
 #include <cstdint>
 
 Chip8::Chip8(std::string rom_path) : m_memory{}, pixels{}, m_pc(512), keys{}, delay_timer(0), sound_timer(0) {
-  // Copy font to memory
-  std::copy(FONT.begin(), FONT.end(), m_memory.begin() + 80);
+	// Copy font to memory
+	std::copy(FONT.begin(), FONT.end(), m_memory.begin() + 80);
 
-  // Read ROM
-  std::ifstream stream(rom_path, std::ios::binary);
-  const std::size_t rom_size = std::filesystem::file_size(rom_path);
-  std::vector<uint8_t> buffer(rom_size);
-  stream.read(reinterpret_cast<char *>(buffer.data()), rom_size);
+	// Read ROM
+	std::ifstream stream(rom_path, std::ios::binary);
+	const std::size_t rom_size = std::filesystem::file_size(rom_path);
+	std::vector<uint8_t> buffer(rom_size);
+	stream.read(reinterpret_cast<char *>(buffer.data()), rom_size);
 
-  // Copy ROM to memory
-  std::copy(buffer.begin(), buffer.end(), m_memory.begin() + 512);
+	// Copy ROM to memory
+	std::copy(buffer.begin(), buffer.end(), m_memory.begin() + 512);
 
-  // Seed RNG
-  std::srand(static_cast<unsigned int>(std::time(nullptr)));
+	// Seed RNG
+	std::srand(static_cast<unsigned int>(std::time(nullptr)));
 }
 
 void Chip8::update()
@@ -25,7 +25,6 @@ void Chip8::update()
 			if (keys[i]) {
 				m_V[m_waiting_register] = i;
 				m_waiting_for_key = false;
-				m_pc += 2;
 				keys[i] = false;
 				break;
 			}
