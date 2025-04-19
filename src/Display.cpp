@@ -1,5 +1,4 @@
 #include "Display.h"
-#include <iostream>
 
 Display::Display() : m_window(nullptr), m_renderer(nullptr), m_screen_surface(nullptr), m_last_timer_update(0), is_running(true)
 {
@@ -24,9 +23,7 @@ void Display::update_timers(uint8_t& delay_timer, uint8_t& sound_timer)
 				// Stop sound here
 			}
 		}
-
 		m_last_timer_update = now;
-		std::cout << static_cast<int>(delay_timer) << std::endl;
 	}
 }
 
@@ -112,13 +109,13 @@ void Display::poll_events(bool* keys, bool* keys_down, bool waiting_for_key)
 
 void Display::render(uint8_t* buffer)
 {
-	SDL_GetWindowSize(m_window, &window_width, &window_height);
+	SDL_GetWindowSize(m_window, &m_window_width, &m_window_height);
 	// Determine the scale factor and the destination offset to keep aspect ratio
-	float scale = std::min((float)window_width / CHIP8_WIDTH, (float)window_height / CHIP8_HEIGHT);
+	float scale = std::min((float)m_window_width / CHIP8_WIDTH, (float)m_window_height / CHIP8_HEIGHT);
 	int render_width = (int)(CHIP8_WIDTH * scale);
 	int render_height = (int)(CHIP8_HEIGHT * scale);
-	int offset_x = (window_width - render_width) / 2;
-	int offset_y = (window_height - render_height) / 2;
+	int offset_x = (m_window_width - render_width) / 2;
+	int offset_y = (m_window_height - render_height) / 2;
 
 	SDL_RenderClear(m_renderer);
 

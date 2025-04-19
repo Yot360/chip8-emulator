@@ -1,5 +1,4 @@
 #include "Chip8.h"
-#include <cstdint>
 
 Chip8::Chip8(std::string rom_path) : m_memory{}, pixels{}, m_pc(512), keys{}, delay_timer(0), sound_timer(0) {
 	// Copy font to memory

@@ -15,7 +15,9 @@ int main(int argc, char *argv[])
 	// Timing constants
 	const int TARGET_FPS = 60; // Display refresh rate
 	const int FRAME_DELAY = 1000 / TARGET_FPS; // ~16.666ms per frame
+	const int TARGET_INSTRUCTIONS = 12; // How many instructions per frame
 	int frame_start, frame_time, timer_accumulator = 0;
+	uint32_t previous_ticks = SDL_GetTicks();
 
 	// Emulator related objects, init SDL and emulator variables
 	Chip8 chip8(rom_path);
@@ -23,17 +25,18 @@ int main(int argc, char *argv[])
 
 	// Emulator loop
 	while (display.is_running) {
-		frame_start = SDL_GetTicks();
+		uint32_t current_ticks = SDL_GetTicks();
+		uint32_t elapsed = current_ticks - previous_ticks;
+		previous_ticks = current_ticks;
 
 		// Update timers at 60Hz
-		timer_accumulator += FRAME_DELAY;
+		timer_accumulator += elapsed;
 		if (timer_accumulator >= FRAME_DELAY) {
 			display.update_timers(chip8.delay_timer, chip8.sound_timer);
 			timer_accumulator -= FRAME_DELAY;
 		}
 
-		// Execute multiple instructions, 12 per frame
-		for (int i = 0; i < 12; i++) {
+		for (int i = 0; i < TARGET_INSTRUCTIONS; i++) {
 			chip8.update();
 		}
 
@@ -44,8 +47,8 @@ int main(int argc, char *argv[])
 		display.render(chip8.pixels);
 
 		// Delay to limit FPS
-		frame_time = SDL_GetTicks() - frame_start;
-		if (frame_time > FRAME_DELAY) {
+		frame_time = SDL_GetTicks() - current_ticks;
+		if (frame_time < FRAME_DELAY) {
 			SDL_Delay(FRAME_DELAY - frame_time);
 		}
 	}

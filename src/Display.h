@@ -12,7 +12,7 @@ private:
 	SDL_Surface* m_screen_surface;
 	SDL_Event m_event;
 
-	int window_width, window_height;
+	int m_window_width, m_window_height;
 	static constexpr int CHIP8_WIDTH = 64;
 	static constexpr int CHIP8_HEIGHT = 32;
 
