@@ -58,7 +58,7 @@ private:
 
 public:
 	Chip8(std::string rom_path);
-	virtual ~Chip8();
+	virtual ~Chip8() {}
 
 	void update();
 

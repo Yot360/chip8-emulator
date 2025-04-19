@@ -262,8 +262,3 @@ void Chip8::update()
 
 	}
 }
-
-Chip8::~Chip8()
-{
-
-}

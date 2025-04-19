@@ -17,12 +17,17 @@ private:
 	static constexpr int CHIP8_HEIGHT = 32;
 
 	uint32_t m_last_timer_update;
+	bool m_is_running;
 
 public:
 	Display();
 	virtual ~Display();
 
-	bool is_running;
+	// Getter
+	bool is_running()
+	{
+		return m_is_running;
+	}
 
 	bool init();
 	void update_timers(uint8_t& delay_timer, uint8_t& sound_timer);

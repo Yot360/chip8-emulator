@@ -1,6 +1,6 @@
 #include "Display.h"
 
-Display::Display() : m_window(nullptr), m_renderer(nullptr), m_screen_surface(nullptr), m_last_timer_update(0), is_running(true)
+Display::Display() : m_window(nullptr), m_renderer(nullptr), m_screen_surface(nullptr), m_last_timer_update(0), m_is_running(true)
 {
 	// Init SDL
 	SDL_Init(SDL_INIT_VIDEO);
@@ -31,7 +31,7 @@ void Display::poll_events(bool* keys, bool* keys_down, bool waiting_for_key)
 {
 	while (SDL_PollEvent(&m_event) != 0) {
 		if (m_event.type == SDL_EVENT_QUIT) {
-			is_running = false;
+			m_is_running = false;
 		}
 		else if (m_event.type == SDL_EVENT_KEY_DOWN || m_event.type == SDL_EVENT_KEY_UP) {
 			int chip8_key = -1;
@@ -149,5 +149,7 @@ void Display::render(uint8_t* buffer)
 
 Display::~Display()
 {
-
+	SDL_DestroyRenderer(m_renderer);
+	SDL_DestroyWindow(m_window);
+	SDL_Quit();
 }

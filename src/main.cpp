@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	Display display;
 
 	// Emulator loop
-	while (display.is_running) {
+	while (display.is_running()) {
 		uint32_t current_ticks = SDL_GetTicks();
 		uint32_t elapsed = current_ticks - previous_ticks;
 		previous_ticks = current_ticks;
