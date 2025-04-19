@@ -48,6 +48,12 @@ jobs:
     - uses: actions/checkout@v4
       with:
         submodules: true
+
+    - name: Install X11 and Wayland dev packages
+      run: |
+        sudo apt-get update && sudo apt-get install -y \
+        libx11-dev libxext-dev libxrandr-dev libxrender-dev libxcursor-dev libxi-dev \
+        libwayland-dev libxkbcommon-dev wayland-protocols libdrm-dev libgbm-dev
     
     - name: Set reusable strings
       # Turn repeated input strings (such as the build output directory) into step outputs. These step outputs can be used throughout the workflow file.
